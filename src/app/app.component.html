@@ -1,7 +1,7 @@
 <app-header />
 
 <main>
-  <div id="dashboard">
+  <!-- <div id="dashboard">
     <app-dashboard-item 
       imgSrc="status.png" 
       altImg="A signal symbol" 
@@ -23,5 +23,11 @@
     >
       <app-tickets />
     </app-dashboard-item>
-  </div>
+  </div> -->
+  <app-hello-world [count]="0" />
+
+  <app-toggle 
+    [(value)]="isToggle"
+    [(count)]="count"
+  />
 </main>
