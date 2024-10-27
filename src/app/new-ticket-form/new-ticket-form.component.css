@@ -1,9 +1,0 @@
-#new-ticket {
-  width: 15rem;
-}
-
-@media (min-width: 768px) {
-  #tickets {
-    flex-direction: row;
-  }
-}
