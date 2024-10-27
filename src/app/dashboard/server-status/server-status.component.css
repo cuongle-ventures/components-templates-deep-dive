@@ -1,6 +1,8 @@
 :host {
   display: block;
   width: 15rem;
+  padding-left: 5px;
+  padding-right: 5px;
 }
 
 .status p:first-of-type {
