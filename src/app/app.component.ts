@@ -7,6 +7,7 @@ import { TicketsComponent } from "./dashboard/tickets/tickets.component";
 import { DashboardItemComponent } from "./dashboard/dashboard-item/dashboard-item.component";
 import { HelloWorldComponent } from './hello-world/hello-world.component';
 import { ToggleComponent } from "./toggle/toggle.component";
+import { ButtonComponent } from './shared/button/button.component';
 
 @Component({
   selector: 'app-root',
@@ -21,10 +22,9 @@ import { ToggleComponent } from "./toggle/toggle.component";
     NgFor,
     HelloWorldComponent,
     NgIf,
-    ToggleComponent
-]
+    ToggleComponent,
+  ],
 })
 export class AppComponent {
-  isToggle = false;
-  count = 0;
+  
 }

@@ -1,4 +1,4 @@
-import { Component, EventEmitter, input, Input, Output } from '@angular/core';
+import { Component, EventEmitter, input, Input, Output, ViewChild } from '@angular/core';
 
 @Component({
   selector: 'app-toggle',
@@ -13,4 +13,8 @@ export class ToggleComponent {
 
   @Input({required: true}) count!: number;
   @Output() countChange = new EventEmitter();
+
+  toggle() {
+    this.valueChange.emit(!this.value);
+  }
 }
