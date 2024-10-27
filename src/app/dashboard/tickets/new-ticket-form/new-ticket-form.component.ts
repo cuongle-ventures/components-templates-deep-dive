@@ -15,6 +15,9 @@ export class NewTicketFormComponent implements AfterViewInit {
   @ViewChild('textarea') textareaEl?: ElementRef<HTMLTextAreaElement>;
   @ViewChild('frm') frm?: ElementRef<HTMLFormElement>;
   @Output() addChange = new EventEmitter<{ title: string; request: string }>();
+
+  title: string = '';
+  request: string = '';
   
   onSubmit() {
     this.addChange.emit({ 
